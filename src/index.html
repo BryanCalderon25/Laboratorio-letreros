@@ -3,55 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flyer Informativo UCR</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>UCR | Sistema Informativo Moderno</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    
+    <!-- Web Components Module -->
+    <script type="module" src="./main.js"></script>
+    
+    <meta name="description" content="Sistema informativo y flyer interactivo de la Universidad de Costa Rica - Sede Guanacaste.">
 </head>
 <body>
-    <div class="flyer-container">
-        <header class="header">
-            <div class="logo-box">
-                <span class="la-sede">LA SEDE</span>
-                <span class="te-acompana">TE ACOMPAÑA</span>
-            </div>
-        </header>
+    
+    <div class="app-container">
+        <!-- Modern Flyer Component -->
+        <ucr-flyer></ucr-flyer>
 
-        <main class="content">
-            <h2 class="title-main">El respeto no se negocia</h2>
-            <h1 class="title-sub">¡Pará ya de acosar!</h1>
-            
-        <div class="qr-section">
-            <p>Si necesitas ayuda, escanea este QR:</p>
-            <img src="Imagenes/qr.png" alt="QR" class="qr-img">
-        </div>
-        </main>
-
-        <section class="people-section">
-    <img src="Imagenes/personas.png" alt="Estudiantes UCR" class="person">
-</section>
-
-        <footer class="footer">
-            <div class="footer-logos">
-                <span class="footer-text">UCR</span>
-                <span class="divider">|</span>
-                <span class="footer-subtext">UCR LIBRE DE ACOSO SEXUAL</span>
-                <span class="divider">|</span>
-                <span class="footer-text">SG Sede de Guanacaste</span>
-            </div>
-        </footer>
+        <!-- Directional Sign Board Component -->
+        <sign-board></sign-board>
     </div>
 
-
-
-    <div class="sign-container">
-    <div class="sign">
-        <div class="sign-item">Aulas 5, 6, 7 <span>➜</span></div>
-        <div class="sign-item">Apoyo Informático <span>➜</span></div>
-        <div class="sign-item">Servidores <span>➜</span></div>
-        <div class="sign-item">Laboratorio 1 y 2 <span>➜</span></div>
-        <div class="sign-item">Coordinación Informática Empresarial <span>➜</span></div>
-        <div class="sign-footer">UCR</div>
-    </div>
-</div>
+    <!-- SEO & Accessibility: Hidden H1 -->
+    <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
+        Universidad de Costa Rica - Sede de Guanacaste - Sistema Informativo
+    </h1>
 
 </body>
 </html>
